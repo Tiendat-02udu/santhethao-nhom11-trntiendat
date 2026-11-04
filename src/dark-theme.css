@@ -1,0 +1,845 @@
+:root {
+  color: #eceee8;
+  background: #121512;
+  color-scheme: dark;
+  --surface: #1b1f1b;
+  --surface-raised: #222722;
+  --surface-hover: #292f28;
+  --line: #303630;
+  --text: #eceee8;
+  --muted: #9da69a;
+  --accent: #d3f05a;
+  --accent-ink: #1b2110;
+}
+
+body {
+  color: var(--text);
+  background: #121512;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline-color: var(--accent);
+}
+
+.app-layout {
+  background: #121512;
+}
+
+.sidebar {
+  background: #171a17;
+  border-color: #2a302a;
+}
+
+.brand {
+  color: #f0f1eb;
+}
+
+.brand-mark {
+  background: var(--accent);
+  color: #1a2012;
+  border-radius: 9px;
+}
+
+.brand-highlight,
+.brand-dot {
+  color: var(--accent);
+}
+
+.workspace-label {
+  color: #798276;
+}
+
+.nav-link {
+  color: #a1a99e;
+  border-radius: 7px;
+}
+
+.nav-link:hover,
+.icon-button:hover {
+  background: #242a24;
+  color: var(--accent);
+}
+
+.nav-link.active {
+  position: relative;
+  background: #282e26;
+  color: var(--accent);
+}
+
+.nav-link.active::before {
+  position: absolute;
+  inset: 9px auto 9px 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--accent);
+  content: '';
+}
+
+.nav-count {
+  border-color: #41483d;
+  background: #20251f;
+  color: #d3d9ce;
+}
+
+.sidebar-separator,
+.profile-row {
+  border-color: #2b312b;
+}
+
+.upgrade-card {
+  border-color: #343a31;
+  background: #20251f;
+}
+
+.upgrade-icon {
+  background: #343c29;
+  color: var(--accent);
+}
+
+.upgrade-card > b,
+.profile-copy b {
+  color: #e4e8df;
+}
+
+.upgrade-card p,
+.profile-copy span {
+  color: #929b8f;
+}
+
+.invite-button,
+.text-link {
+  color: var(--accent);
+}
+
+.text-link:hover,
+.invite-button:hover {
+  color: #e7fa9a;
+}
+
+.avatar {
+  background: #4a503d;
+  color: #e6edbf;
+}
+
+.icon-button,
+.top-user {
+  color: #9ba498;
+}
+
+.main-area {
+  background: #121512;
+}
+
+.topbar {
+  border-color: #2a302a;
+  background: rgb(18 21 18 / 93%);
+}
+
+.breadcrumb {
+  color: #7f887d;
+}
+
+.breadcrumb b {
+  color: #d4d9d0;
+}
+
+.topbar-divider {
+  background: #343a34;
+}
+
+.notification-button i {
+  border-color: #171a17;
+  background: var(--accent);
+}
+
+.page-content {
+  color: var(--text);
+}
+
+.eyebrow {
+  color: #9aa392;
+}
+
+.eyebrow-dot {
+  background: var(--accent);
+}
+
+.welcome-row h1,
+.page-title h1,
+.section-heading h2,
+.detail-heading h1,
+.detail-section-title,
+.booking-info h3,
+.panel-heading h2,
+.modal-heading h2,
+.empty-state h3 {
+  color: #f0f1eb;
+}
+
+.welcome-row p,
+.page-title p {
+  color: #a0a89d;
+}
+
+.wave,
+.heading-sparkle {
+  color: var(--accent);
+}
+
+.outline-button,
+.primary-button,
+.hero-button {
+  border-radius: 6px;
+}
+
+.outline-button {
+  border-color: #3a4239;
+  background: #1c211c;
+  color: #e0e5dc;
+}
+
+.outline-button:hover {
+  border-color: #69783a;
+  background: #252b23;
+}
+
+.primary-button {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  box-shadow: none;
+}
+
+.primary-button:hover {
+  border-color: #e0f77e;
+  background: #e0f77e;
+}
+
+.hero-banner {
+  border-radius: 9px;
+  background-color: #242b22;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgb(13 17 13 / 94%) 0%, rgb(13 17 13 / 76%) 42%, rgb(13 17 13 / 8%) 100%),
+    linear-gradient(0deg, rgb(13 17 13 / 36%), transparent 48%);
+}
+
+.hero-kicker {
+  color: #d7ed9b;
+}
+
+.hero-copy h2 {
+  color: #f4f4ed;
+  letter-spacing: -1.6px;
+}
+
+.hero-copy > p,
+.hero-proof {
+  color: #c1c8bb;
+}
+
+.hero-button {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.hero-button:hover {
+  background: #e0f77e;
+}
+
+.hero-badge {
+  border: 1px solid rgb(255 255 255 / 13%);
+  background: rgb(27 31 27 / 94%);
+  color: #f0f1eb;
+  box-shadow: none;
+}
+
+.hero-badge span {
+  color: #a1aa9d;
+}
+
+.badge-star {
+  color: var(--accent);
+}
+
+.proof-avatars span {
+  border-color: #262d25;
+}
+
+.stat-card,
+.search-panel,
+.venue-card,
+.listing-toolbar,
+.booking-card,
+.booking-row,
+.owner-panel,
+.empty-state {
+  border-color: #303630;
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.stat-card {
+  border-radius: 8px;
+}
+
+.stat-icon {
+  border-radius: 7px;
+}
+
+.stat-icon.mint,
+.stat-icon.blue,
+.stat-icon.pink,
+.stat-icon.amber {
+  background: #2a3027;
+  color: var(--accent);
+}
+
+.stat-label,
+.results-caption,
+.detail-heading p,
+.detail-description,
+.booking-meta span,
+.panel-heading p {
+  color: #a0a89d;
+}
+
+.stat-bottom > b {
+  color: #edf0e7;
+}
+
+.stat-trend.mint,
+.stat-trend.blue,
+.stat-trend.pink,
+.stat-trend.amber {
+  background: #2a3027;
+  color: #c8d78e;
+}
+
+.section-heading h2 {
+  letter-spacing: -0.6px;
+}
+
+.search-panel,
+.listing-toolbar {
+  border-radius: 7px;
+}
+
+.search-field,
+.select-field,
+.list-search {
+  color: #9ca698;
+}
+
+.search-field input,
+.list-search input,
+.select-field select,
+.listing-toolbar select {
+  color: #e3e7dd;
+}
+
+.search-field input::placeholder,
+.list-search input::placeholder {
+  color: #7f897c;
+}
+
+.search-divider,
+.listing-toolbar select {
+  border-color: #343a34;
+}
+
+.search-submit {
+  border-radius: 5px;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.search-submit:hover {
+  background: #e0f77e;
+}
+
+.search-shortcut {
+  border-color: #3a4239;
+  background: #242a24;
+  color: #b6beb1;
+}
+
+.venue-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.venue-image-wrap img,
+.detail-cover img {
+  filter: saturate(0.88);
+  transition: filter 180ms ease, transform 350ms ease;
+}
+
+.venue-card:hover .venue-image-wrap img {
+  filter: saturate(1.05);
+  transform: scale(1.035);
+}
+
+.venue-tag {
+  border-radius: 4px;
+  background: var(--accent);
+  color: #202515;
+}
+
+.favorite-button {
+  border: 1px solid rgb(255 255 255 / 12%);
+  background: rgb(18 21 18 / 84%);
+  color: #f0f1eb;
+}
+
+.favorite-button:hover,
+.favorite-button.is-favorite {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.venue-meta,
+.venue-rating span {
+  color: #a0a89d;
+}
+
+.venue-meta i {
+  background: #717a6e;
+}
+
+.venue-name,
+.venue-card-footer > div > b {
+  color: #edf0e7;
+}
+
+.venue-rating {
+  color: var(--accent);
+}
+
+.venue-card-footer {
+  border-color: #303630;
+}
+
+.venue-card-footer > div > span {
+  color: #9da69a;
+}
+
+.card-arrow {
+  border-radius: 5px;
+  background: #30372b;
+  color: var(--accent);
+}
+
+.card-arrow:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.bottom-promo {
+  border-color: #343a31;
+  background: #20251f;
+}
+
+.promo-icon {
+  background: #343c29;
+  color: var(--accent);
+}
+
+.bottom-promo b {
+  color: #e7eae1;
+}
+
+.bottom-promo p {
+  color: #9da69a;
+}
+
+.page-title {
+  align-items: center;
+}
+
+.filter-button,
+.sort-button {
+  color: #d7ddd2;
+}
+
+.listing-toolbar select {
+  background: transparent;
+}
+
+.results-caption b {
+  color: #e1e6dc;
+}
+
+.back-link {
+  color: #a0a99d;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.detail-cover {
+  border-radius: 8px;
+  background: #20251f;
+}
+
+.detail-cover-tag {
+  background: #1b1f1b;
+  color: var(--accent);
+}
+
+.detail-divider {
+  background: #303630;
+}
+
+.amenities span,
+.booking-card-label,
+.booking-price span,
+.booking-summary span,
+.secure-note {
+  color: #9da69a;
+}
+
+.amenities svg,
+.booking-card-note {
+  color: var(--accent);
+}
+
+.date-picker > button {
+  border-color: #343a34;
+  background: #20251f;
+  color: #a5aea1;
+}
+
+.date-picker b {
+  color: #e5e9e0;
+}
+
+.date-picker .date-active {
+  border-color: #819443;
+  background: #323b27;
+}
+
+.date-picker .date-active b,
+.date-picker .date-active small {
+  color: var(--accent);
+}
+
+.time-slot {
+  border-color: #343a34;
+  background: #20251f;
+  color: #e0e5db;
+}
+
+.time-slot small {
+  color: #9da69a;
+}
+
+.time-slot:hover,
+.time-slot.slot-active {
+  border-color: #91a94a;
+  background: #303826;
+}
+
+.time-slot.slot-active span,
+.time-slot.slot-active small {
+  color: var(--accent);
+}
+
+.time-slot.slot-busy {
+  background: #191c19;
+  color: #687165;
+}
+
+.booking-price b {
+  color: #f0f1eb;
+}
+
+.booking-summary {
+  border-color: #343a34;
+}
+
+.booking-summary b {
+  color: #dce1d7;
+}
+
+.book-button:disabled {
+  border-color: #4a5143;
+  background: #4a5143;
+  color: #c5cbbe;
+}
+
+.success-message,
+.status-pill.confirmed {
+  background: #293427;
+  color: #d3f05a;
+}
+
+.tabs-row {
+  border-color: #303630;
+}
+
+.tab-button {
+  color: #9da69a;
+}
+
+.tab-active {
+  color: var(--accent);
+}
+
+.tab-active::after {
+  background: var(--accent);
+}
+
+.booking-sport {
+  color: var(--accent);
+}
+
+.booking-sport i {
+  background: #626c60;
+}
+
+.booking-row-right > b {
+  color: #e6e9e0;
+}
+
+.status-pill.cancelled {
+  background: #392b29;
+  color: #e3a097;
+}
+
+.cancel-link {
+  color: #e2a097;
+}
+
+.cancel-confirm button {
+  background: #392b29;
+  color: #e3a097;
+}
+
+.cancel-confirm button + button {
+  background: #303630;
+  color: #c0c8bb;
+}
+
+.owner-panel {
+  border-radius: 8px;
+}
+
+.panel-heading select {
+  border-color: #3a4239;
+  background: #20251f;
+  color: #dce1d7;
+}
+
+.chart-grid-lines i,
+.table-head,
+.table-row {
+  border-color: #303630;
+}
+
+.chart-grid-lines i {
+  background: #303630;
+}
+
+.chart-y-labels,
+.chart-x-labels,
+.chart-legend {
+  color: #9da69a;
+}
+
+.bar {
+  background: #525d37;
+}
+
+.bar:hover,
+.bar-highlight,
+.chart-legend i {
+  background: var(--accent);
+}
+
+.table-head {
+  color: #929b8f;
+}
+
+.table-row,
+.customer-cell b,
+.table-row > span:nth-child(2) > b {
+  color: #dce1d7;
+}
+
+.table-row small {
+  color: #9da69a;
+}
+
+.avatar-1 {
+  background: #49353c;
+  color: #edc3d1;
+}
+
+.avatar-2 {
+  background: #354151;
+  color: #c3d7ed;
+}
+
+.empty-state > div {
+  background: #30382a;
+  color: var(--accent);
+}
+
+.empty-state p {
+  color: #a0a89d;
+}
+
+.api-notice {
+  border-color: #51472e;
+  background: #29251b;
+  color: #e7ce8c;
+}
+
+.api-error {
+  border-color: #563a36;
+  background: #30211f;
+  color: #f0aaa0;
+}
+
+.demo-button {
+  border-color: #3a4239;
+  background: #20251f;
+  color: var(--accent);
+}
+
+.demo-button:hover {
+  background: #2a3027;
+}
+
+.modal-backdrop {
+  background: rgb(5 7 5 / 78%);
+}
+
+.venue-modal,
+.login-card {
+  border: 1px solid #343a34;
+  border-radius: 9px;
+  background: #1b1f1b;
+  color: var(--text);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 45%);
+}
+
+.venue-form label {
+  color: #d2d8cd;
+}
+
+.venue-form input,
+.venue-form select,
+.venue-form textarea {
+  border-color: #3a4239;
+  background: #141714;
+  color: #edf0e7;
+}
+
+.venue-form input:focus,
+.venue-form select:focus,
+.venue-form textarea:focus {
+  border-color: #a5c54a;
+}
+
+.login-wrap {
+  color: var(--text);
+  border-color: #303630;
+  background: #1b1f1b;
+}
+
+.login-card h1 {
+  color: #f0f1eb;
+}
+
+.login-card > .eyebrow {
+  color: #a7b48a;
+}
+
+.login-card form label {
+  color: #d2d8cd;
+}
+
+.role-picker button {
+  border-color: #3a4239;
+  background: #20251f;
+  color: #c0c8bb;
+}
+
+.role-picker button:hover {
+  border-color: #687447;
+  background: #292f25;
+}
+
+.role-picker button.role-active {
+  border-color: #819443;
+  background: #30382a;
+  color: var(--accent);
+}
+
+.login-card form input {
+  border-color: #3a4239;
+  background: #141714;
+  color: #edf0e7;
+}
+
+.login-card form input::placeholder {
+  color: #899385;
+}
+
+.login-card form input:focus {
+  border-color: #a5c54a;
+}
+
+.login-subtitle,
+.login-demo {
+  color: #a0a89d;
+}
+
+.role-picker {
+  border-color: #343a34;
+  background: #141714;
+}
+
+.login-decoration {
+  background: #252b23;
+}
+
+.login-decoration-copy > span,
+.login-quote span {
+  color: #bbc99b;
+}
+
+.login-decoration-copy h2,
+.login-quote {
+  color: #f0f1eb;
+}
+
+.login-decoration-copy p {
+  color: #c0c8bb;
+}
+
+.login-orbit {
+  border-color: rgb(211 240 90 / 20%);
+}
+
+.back-home {
+  color: #c0c8bb;
+}
+
+.nav-scrim {
+  background: rgb(5 7 5 / 70%);
+}
+
+@media (max-width: 650px) {
+  .page-title {
+    align-items: flex-start;
+  }
+}

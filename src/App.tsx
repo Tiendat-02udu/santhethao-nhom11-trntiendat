@@ -10,6 +10,7 @@ import { useAuth } from './auth-context'
 import { useBookingStore, type Booking } from './store'
 import { apiRequest, toBookingView, toVenueView, type ApiVenue, type VenueView } from './api'
 import './App.css'
+import './dark-theme.css'
 
 type Venue = VenueView
 type OutletData = { venues: Venue[]; setVenues: (updater: (previous: Venue[]) => Venue[]) => void }
